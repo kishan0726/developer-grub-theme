@@ -1,0 +1,70 @@
+# ============================================================
+# DEVELOPER GRUB  -  Neon Developer Boot Manager
+# Designed for a 1920x1080 GRUB graphics mode
+# (all static artwork lives in background.png)
+# ============================================================
+
+desktop-image: "background.png"
+desktop-color: "#030d17"
+title-text: ""
+
+terminal-font: "DevMono Bold 16"
+terminal-left: "5%"
+terminal-top: "8%"
+terminal-width: "90%"
+terminal-height: "80%"
+terminal-border: "0"
+
+# ------------------------------------------------------------
+# BOOT MENU
+# ------------------------------------------------------------
++ boot_menu {
+    left = 85
+    top = 433
+    width = 1048
+    height = 335
+
+    item_font = "DevMono Bold 30"
+    item_color = "#c7efff"
+    selected_item_font = "DevMono Bold 30"
+    selected_item_color = "#ffffff"
+
+    item_height = 76
+    item_spacing = 6
+    item_padding = 105
+    icon_width = 52
+    icon_height = 52
+    item_icon_space = 56
+
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = false
+}
+
+# ------------------------------------------------------------
+# AUTO BOOT COUNTDOWN
+# ------------------------------------------------------------
++ progress_bar {
+    id = "__timeout__"
+    left = 101
+    top = 864
+    width = 829
+    height = 45
+
+    show_text = false
+    fg_color = "#19d4ff"
+    bg_color = "#06182a"
+    border_color = "#0b8fc4"
+}
+
++ label {
+    id = "__timeout__"
+    left = 960
+    top = 864
+    width = 290
+    height = 45
+
+    text = "AUTO BOOT IN %ds"
+    font = "DevMono Bold 22"
+    color = "#e4fbff"
+    align = "center"
+}
