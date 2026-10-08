@@ -81,30 +81,6 @@ You can change:
 - Background image
 - Boot menu layout
 
-To use your own background, replace:
-
-```text
-background.png
-```
-
-with your desired image.
-
-## Recommended Resolution
-
-The theme is designed primarily for:
-
-```text
-1920 × 1080
-```
-
-The theme may also work on other resolutions, but some layout adjustments in `theme.txt` may be required.
-
-## Tested On
-
-- Fedora Linux
-- GRUB2
-- 1920×1080 display
-
 ## Important
 
 Before modifying GRUB, make sure you have access to your system's recovery options.
